@@ -9,7 +9,7 @@ stack="",
     super(message);
     this.statusCode = statusCode; 
     this.data = null;
-    this.errors = this.errors;
+    this.errors = errors;
     this.message = message;
     this.success = false;
 
