@@ -14,4 +14,30 @@ app.use(express.urlencoded({extended:true,limit:"16kb"}));
 app.use(express.static("public"));
 app.use(cookieParser());
 
+
+
+//Routes Import
+
+import userRouter from './routes/user.routes.js';
+
+
+//Pehle humare kaam app.get se hojaraha tha , bcauz routes and controllers yhi likh rhe the 
+// but ab seperate kr diya h  --> to ab middlewares ko lana hoga
+
+//_____Routes Declaration_______
+
+ app.use("/api/v1/users", userRouter);
+
+ 
+
+
+ //NOw   '' /api/v1/users ''  is our prefix
+//  ex-> http://localhost:5000/api/v1/users/register
+
+
+
+
+
+
+
 export {app};
