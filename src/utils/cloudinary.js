@@ -35,6 +35,4 @@ import fs from 'fs';
 
     
 
-    cloudinary.v2.uploader.upload( "",{public_id:"olympic_flag"}, function(error, result) {console.log(result) });
-
 export {uploadOnCloudinary}

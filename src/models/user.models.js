@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import bcrypt from "bcryptjs";
+import bcrypt from 'bcrypt'; // Uncomment this line after installing bcryptjs
 import jwt from "jsonwebtoken";
 const userSchema = new mongoose.Schema({
 
@@ -27,7 +27,7 @@ const userSchema = new mongoose.Schema({
     },
     avatar: {
         type: String, //CLoudinary URL
-        required:true
+        // required:true
     },
     coverImage: {
         type: String, //CLoudinary URL
@@ -94,4 +94,4 @@ export const User = mongoose.model("User", userSchema);
 
 
 
-// JWT --> is a Bearer token that is used to authenticate users , like a key 
+// JWT --> is a Bearer token that is used to authenticate users , like a key
